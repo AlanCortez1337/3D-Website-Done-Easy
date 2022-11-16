@@ -1,0 +1,191 @@
+:root {
+  --canvas-height: 500px;
+  --canvas-width: 1000px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #c0c0c0;
+}
+
+section, nav, footer {
+  padding: 0 10%;
+}
+
+canvas {
+  pointer-events: none;
+}
+/* Header Styles */
+
+header {
+  margin-right: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hero Styles */
+.hero {
+  width: 80%;
+  height: 600px;
+  position: relative;
+}
+
+.hero-text {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  gap: 15px;
+}
+/* About Us Styles */
+.about-us {
+  margin: 0 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-us h2, .about-blurb {
+  text-align: center;
+}
+
+.about-us .content {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+/*   gap: 10%; */
+}
+
+.about-us p {
+  font-size: 16px;
+  padding: 20px 30px;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.about-us .content p {
+  margin: 5%;
+}
+/* Contact Us Styles */
+.contact-us {
+  margin: 10% 20%;
+  height: 300px;
+}
+
+.contact-us .nav-items {
+  width: 40px;
+}
+
+.contact-us .content {
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us .content p {
+  font-size: 16px;
+  padding: 20px 30px;
+  margin: 3% 5% 1% 5%;
+}
+
+.socials {
+  width: 100%;
+  text-align: center;
+}
+/* Footer Styles */
+footer {
+  padding: 10px 10%;
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div ul {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.path-text {
+  color: #FF4365;
+  font-weight: 700;
+}
+/* Responsiveness */
+@media screen and (min-width: 850px) {
+  .about-us {
+    gap: 80px;
+  }
+  .about-us .content {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+  .about-us .content:last-child {
+    flex-direction: row-reverse;
+  }
+  .about-us .content p {
+    width: 40%;
+    text-align: initial;
+  }
+  footer {
+    background-color: #dfdfdf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .path-text {
+    color: #FF4365;
+    font-weight: 700;
+  }
+}
